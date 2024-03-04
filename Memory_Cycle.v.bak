@@ -1,0 +1,58 @@
+module Memory_Cycle (CLK, Rst, RegWriteM, MemWriteM, ResultSrcM, RD_M, PCPlus4M, WriteDataM, 
+ALU_ResultM, RegWriteW, ResultSrcW, RD_W, PCPlus4W, ALU_ResultW, ReadDataW);
+
+	//Declare in/out
+	input CLK, Rst;
+	input RegWriteM, MemWriteM, ResultSrcM;
+	input [31:0] PCPlus4M, WriteDataM, ALU_ResultM;
+	input [4:0] RD_M; 
+	
+	output RegWriteW, ResultSrcW;
+	output [31:0] ALU_ResultW, ReadDataW, PCPlus4W;
+	output [4:0] RD_W;
+	
+	//Declare wire
+	wire [31:0] ReadDataM;
+	//Declare reg 
+	reg RegWriteM_r, ResultSrcM_r;
+	reg [31:0] ALU_ResultM_r, ReadDataM_r, PCPlus4M_r;
+	reg [4:0] RD_M_r;
+	//Declare Module 
+	// Declare DMem
+	Data_Memory DMem (.CLK(CLK), 
+							.Rst(Rst), 
+							.WE(MemWriteM), 
+							.WD(WriteDataM), 
+							.A(ALU_ResultM), 
+							.RD(ReadDataM));
+							
+	//Register Logic
+	always @(posedge CLK or negedge Rst) begin 
+		if(Rst == 0) begin
+			RegWriteM_r <= 0;
+			ResultSrcM_r <= 0;
+			ALU_ResultM_r <= 0;
+			ReadDataM_r <= 0;
+			PCPlus4M_r <= 0;
+			RD_M_r <= 0;
+		end
+		else begin
+			RegWriteM_r <= RegWriteM;
+			ResultSrcM_r <= ResultSrcM;
+			ALU_ResultM_r <= ALU_ResultM;
+			ReadDataM_r <= ReadDataM;
+			PCPlus4M_r <= PCPlus4M;
+			RD_M_r <= RD_M;
+		end
+	end
+	
+	// Output assign
+	
+	assign RegWriteW = RegWriteM_r;
+	assign ResultSrcW = ResultSrcM_r;
+	assign ALU_ResultW = ALU_ResultM_r;
+	assign ReadDataW = ReadDataM_r;
+	assign PCPlus4W = PCPlus4M_r;
+	assign RD_W = RD_M_r;
+	
+endmodule 

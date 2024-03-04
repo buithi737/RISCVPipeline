@@ -1,0 +1,131 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\RISCV\RISCV_Pipeline_Core\RISCV_Build\simulation\modelsim
+vFetch_Cycle
+IYGH0z9cRSGFHaa1;^Ij@k0
+VhLES4;1iM7_PDJdZfBVSh2
+Z1 dD:\RISCV\RISCV_Pipeline_Core\RISCV_Build\simulation\modelsim
+w1709039323
+8D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/Fetch_Cycle.v
+FD:/RISCV/RISCV_Pipeline_Core/RISCV_Build/Fetch_Cycle.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/RISCV/RISCV_Pipeline_Core/RISCV_Build -O0
+n@fetch_@cycle
+!i10b 1
+!s100 EBE3[?Aan7?=<a8g42C0b0
+!s85 0
+!s108 1709039461.771000
+!s107 D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/Fetch_Cycle.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/RISCV/RISCV_Pipeline_Core/RISCV_Build|D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/Fetch_Cycle.v|
+!s101 -O0
+vFetch_Cycle_tb
+!i10b 1
+!s100 k9lbRf=M@W6lzd>PEnYSj2
+Ia8Ad:51S136VFG<j8b1GG2
+V4Cbn;N=A]4C1QM46k96=d1
+R1
+w1709038610
+8D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/Fetch_Cycle_tb.v
+FD:/RISCV/RISCV_Pipeline_Core/RISCV_Build/Fetch_Cycle_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1709039461.814000
+!s107 D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/Fetch_Cycle_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/RISCV/RISCV_Pipeline_Core/RISCV_Build|D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/Fetch_Cycle_tb.v|
+!s101 -O0
+R3
+R4
+n@fetch_@cycle_tb
+vIMem
+Il;KRRDWoWDUEnNdURhDAZ3
+Vme`ZR]T5`UiClg>XPk=;k1
+R1
+w1709039437
+8D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/IMem.v
+FD:/RISCV/RISCV_Pipeline_Core/RISCV_Build/IMem.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@i@mem
+!i10b 1
+!s100 DliaRKe;3@CIDBHH3PEQ60
+!s85 0
+!s108 1709039461.715000
+!s107 D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/IMem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/RISCV/RISCV_Pipeline_Core/RISCV_Build|D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/IMem.v|
+!s101 -O0
+vMux
+Ih7oOLLE8aH[j]BfYMnZ?j1
+V8_e[WeF[@cOCmVRYkIe`91
+R1
+w1709027291
+8D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/Mux.v
+FD:/RISCV/RISCV_Pipeline_Core/RISCV_Build/Mux.v
+L0 1
+R2
+r1
+31
+R3
+n@mux
+R4
+!i10b 1
+!s100 hFM[1]ZGDXezf[miE0UFZ2
+!s85 0
+!s108 1709039461.585000
+!s107 D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/Mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/RISCV/RISCV_Pipeline_Core/RISCV_Build|D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/Mux.v|
+!s101 -O0
+vPC_Adder
+I8F<nXFAjFnIJ=8b=g@SE50
+VHjak?m2D@CMQc2ennifJe2
+R1
+w1709027592
+8D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/PC_Adder.v
+FD:/RISCV/RISCV_Pipeline_Core/RISCV_Build/PC_Adder.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@p@c_@adder
+!i10b 1
+!s100 K3kR1_A]_9iH>;^MQW4F?1
+!s85 0
+!s108 1709039461.670000
+!s107 D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/PC_Adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/RISCV/RISCV_Pipeline_Core/RISCV_Build|D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/PC_Adder.v|
+!s101 -O0
+vPC_Module
+IV63@TD8b5OcI^=kAL;cl73
+V?=OgFkzfD_hE3>2OlD:UF2
+R1
+w1709027496
+8D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/PC_Module.v
+FD:/RISCV/RISCV_Pipeline_Core/RISCV_Build/PC_Module.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@p@c_@module
+!i10b 1
+!s100 R_R4B1TSQXJXOldnfL6W_3
+!s85 0
+!s108 1709039461.628000
+!s107 D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/PC_Module.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/RISCV/RISCV_Pipeline_Core/RISCV_Build|D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/PC_Module.v|
+!s101 -O0

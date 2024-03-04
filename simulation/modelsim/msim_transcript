@@ -1,0 +1,78 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do RISCV_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/RISCV/RISCV_Pipeline_Core/RISCV_Build {D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/Mux.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux
+# 
+# Top level modules:
+# 	Mux
+# vlog -vlog01compat -work work +incdir+D:/RISCV/RISCV_Pipeline_Core/RISCV_Build {D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/PC_Module.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PC_Module
+# 
+# Top level modules:
+# 	PC_Module
+# vlog -vlog01compat -work work +incdir+D:/RISCV/RISCV_Pipeline_Core/RISCV_Build {D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/PC_Adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PC_Adder
+# 
+# Top level modules:
+# 	PC_Adder
+# vlog -vlog01compat -work work +incdir+D:/RISCV/RISCV_Pipeline_Core/RISCV_Build {D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/IMem.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IMem
+# 
+# Top level modules:
+# 	IMem
+# vlog -vlog01compat -work work +incdir+D:/RISCV/RISCV_Pipeline_Core/RISCV_Build {D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/Fetch_Cycle.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Fetch_Cycle
+# 
+# Top level modules:
+# 	Fetch_Cycle
+# 
+# vlog -vlog01compat -work work +incdir+D:/RISCV/RISCV_Pipeline_Core/RISCV_Build {D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/Fetch_Cycle_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Fetch_Cycle_tb
+# 
+# Top level modules:
+# 	Fetch_Cycle_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  Fetch_Cycle_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Fetch_Cycle_tb 
+# Loading work.Fetch_Cycle_tb
+# Loading work.Fetch_Cycle
+# Loading work.Mux
+# Loading work.PC_Module
+# Loading work.IMem
+# Loading work.PC_Adder
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $finish    : D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/Fetch_Cycle_tb.v(23)
+#    Time: 7 us  Iteration: 0  Instance: /Fetch_Cycle_tb
+# 1
+# Break in Module Fetch_Cycle_tb at D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/Fetch_Cycle_tb.v line 23
+# Simulation Breakpoint: 1
+# Break in Module Fetch_Cycle_tb at D:/RISCV/RISCV_Pipeline_Core/RISCV_Build/Fetch_Cycle_tb.v line 23
+# MACRO ./RISCV_run_msim_rtl_verilog.do PAUSED at line 21
+add wave -position insertpoint  \
+sim:/Fetch_Cycle_tb/DUT/InstructionMemory/RD
+add wave -position insertpoint  \
+sim:/Fetch_Cycle_tb/DUT/InstructionMemory/A
+add wave -position 7  -autoscale 1 -format Literal -height 17
+# Missing signal name or pattern.

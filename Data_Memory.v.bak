@@ -1,0 +1,17 @@
+module Data_Memory(CLK, Rst, WE, WD, A, RD);
+	input CLK, Rst, WE;
+	input [31:0] WD;
+	input [4:0] A;
+	
+	output [31:0] RD;
+	reg [31:0] Mem [1024];
+	always @(posedge CLK) begin
+		if(WE) Mem [A] <= WD;
+	end 	
+	
+	assign RD = (!Rst) ? 32'b0 : Mem[A];
+
+	initial begin 
+		Mem[0] = 0;
+	end
+endmodule 
